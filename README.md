@@ -39,12 +39,12 @@ Q6:cornersHeuristic
     + di chuyển pacmanPosition(copy) đến vị trí vừa đến
     + lặp lại các bước đến khi checkList(copy) thỏa mãn == [1,1,1,1]
     
- Q7:eat all dot
-  xây dựng foodHeuristic:
-    - Sử dụng hàm MazeDistance ( ở cuối cùng file), là hàm trả về khoảng cách ngắn nhât giữa 2 vị trí, và phụ thuộc vào map (tìm kiếm theo thuật toán bfs)
-    - foodHeuristic là khoảng cách MazeDistance dài nhất giữa state.position đến các dot ( khoảng cách từ pacman đến dot xa nhất)
+Q7:eat all dot
+  - xây dựng foodHeuristic:
+    + Sử dụng hàm MazeDistance ( ở cuối cùng file), là hàm trả về khoảng cách ngắn nhât giữa 2 vị trí, và phụ thuộc vào map (tìm kiếm theo thuật toán bfs)
+    + foodHeuristic là khoảng cách MazeDistance dài nhất giữa state.position đến các dot ( khoảng cách từ pacman đến dot xa nhất)
     
- Q8:closestDot
+Q8:closestDot
     - xây dựng hoàn toàn giống như bfs
     - isgoal trả về true khi pacman position là 1 trong food.asList()
     
